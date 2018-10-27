@@ -3,7 +3,7 @@
 Deploying Spring Cloud Data Flow Local Serve. Please floow th below steps.
 
 1.  Download the Spring Cloud Data Flow Server and Shell apps:
-    I am using 1.7.0 version in my local.
+    I am using 1.7.0 version in my local. Please download RabittMq and install it in your local machine.
 http://repo.spring.io/release/org/springframework/cloud/spring-cloud-dataflow-server-local/
 
 2.  Launch the Data Flow Server.
