@@ -1,6 +1,29 @@
 # spring-cloud-stream-employee-consumer : Spring Cloud Stream - Consume Message from RabbitMQ
 
-Deploying Spring Cloud Data Flow Local Serve. Please floow th below steps.
+# Apache Kafka Please use the below configuration:
+
+1.  Add below Dependency:
+
+        <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-stream-kafka</artifactId>
+		</dependency>
+        
+2.  Please download Kafka and follow the below steps. Reference link: https://kafka.apache.org/quickstart
+
+Go to the Apache Kafka downloads page and download the https://kafka.apache.org/download the 2.12 kafka_2.12-0.10.2.1.tgz
+Next unzip it to a particular location-
+We will now start Apache Kafka-
+This Kafka installation comes with an inbuilt zookeeper. Zookeeper is mainly used to track the status of nodes present in Kafka cluster and also to keep track of Kafka topics, messages, etc.
+Open a command prompt and start the Zookeeper-
+C:\kafka_2.12-0.10.2.1>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+
+Open a new command prompt and start the Apache Kafka-
+C:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+# Deploying Spring Cloud Data Flow Local Serve. Please floow th below steps.
 
 1.  Download the Spring Cloud Data Flow Server and Shell apps:
     I am using 1.7.0 version in my local. Please download RabittMq and install it in your local machine.
